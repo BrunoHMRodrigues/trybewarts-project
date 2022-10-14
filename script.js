@@ -80,3 +80,5 @@ getRequiredCheckbox.addEventListener('click', enableButton);
 loginButton.addEventListener('click', login);
 textArea.addEventListener('input', count);
 buttonSubmmit.addEventListener('click', formChange);
+
+// projeto terminado
