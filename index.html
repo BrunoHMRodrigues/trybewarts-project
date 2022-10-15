@@ -17,12 +17,13 @@
       />
       <h1 id="trybewarts-header-title">Trybewarts</h1>
       <form action="" class="trybewarts-login">
-        <input type="email" name="email" placeholder="Email" id="email" />
+        <input type="email" name="email" placeholder="Email" id="email" class="user-input-login" />
         <input
           type="password"
           name="password"
           placeholder="Senha"
           id="password"
+          class="user-input-login"
         />
         <button type="submit" id="login">Entrar</button>
       </form>
@@ -30,21 +31,28 @@
 
     <main>
       <form id="evaluation-form" action="">
-        <h2></h2>
+        <h2>Formulário de Avaliação</h2>
+
+        <hr>
         <!--  input dados -->
-        <section id="container-user-data">
-          <input type="text" placeholder="Nome" id="input-name" />
-          <input type="text" placeholder="Sobrenome" id="input-lastname" />
-          <input type="email" placeholder="Email" id="input-email" />
-          <select name="" id="house">
-            <option value="Gitnória" id="gitnoria-house">Gitnória</option>
-            <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-            <option value="Corvinode" id="corvinode-house">Corvinode</option>
-            <option value="Pytherina" id="pytherina-house">Pytherina</option>
-          </select>
+        <section id="container-user-data" class="container-data">
+          <input type="text" placeholder="Nome" id="input-name" class="input-user-data" />
+          <input type="text" placeholder="Sobrenome" id="input-lastname" class="input-user-data" />
+          <input type="email" placeholder="Email" id="input-email" class="input-user-data" />
+          <label for="house" id="container-house">Casa:
+            <select name="" id="house" class="input-user-data">
+              <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+              <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+              <option value="Corvinode" id="corvinode-house">Corvinode</option>
+              <option value="Pytherina" id="pytherina-house">Pytherina</option>
+            </select>
+          </label>
         </section>
+
+        <hr>
+
         <!-- checks -->
-        <section>
+        <section id="avaliation" class="container-data">
           <!-- radios -->
           <div class="label-family">
             <label for="family" id="label-family">Qual sua família?</label>
@@ -63,11 +71,9 @@
           </div>
           <!-- checkboxs -->
           <div class="label-content">
-            <label id="label-content"
-              >Qual conteúdo você está com mais vontade de aprender?</label
-            >
-            <br />
-            <label
+            <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+            <div id="subjects">
+              <label
               ><input type="checkbox" class="subject" value="HoFs" />HoFs</label
             >
             <label
@@ -97,8 +103,12 @@
                 value="Python"
               />Python</label
             >
+            </div>
+            
           </div>
         </section>
+
+        <hr>
         <!-- avaliação -->
         <section id="container-avaliation">
           <label for="" id="label-rate"
