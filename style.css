@@ -93,6 +93,7 @@ main {
   opacity: 0.9;
   color: white;
   font-weight: 900;
+  box-shadow: 5px 5px 8px rgb(62, 60, 60);
 }
 
 h2 {
@@ -188,6 +189,12 @@ hr {
   color: white;
   font-weight: 900;
   border-radius: 5px;
+  opacity: 0.8;
+}
+#submit-btn:hover {
+  opacity:1;
+  border: 1px solid white;
+  box-shadow: 1px 1px 8px white;
 }
 
 .form-data {
