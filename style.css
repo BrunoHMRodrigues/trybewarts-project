@@ -9,6 +9,9 @@
 }
 
 .header {
+  position: fixed;
+  width: 100vw;
+  z-index: 999;
   display: flex;
   background-color: rgb(50, 167, 145);
   justify-content: space-between;
@@ -17,6 +20,10 @@
   box-sizing: border-box;
   padding: 10px;
   box-shadow: 5px 5px 8px #888888;
+}
+#empty-container {
+  width: 100vw;
+  height: 12vh;
 }
 
 .trybewarts-header-logo {
@@ -238,6 +245,10 @@ h4 {
     font-size: 8px;
   }
 
+  #empty-container {
+    height: 6vh;
+  }
+
   main {
     height: max-content;
     padding-top: 20px;
@@ -318,6 +329,10 @@ h4 {
   #trybewarts-header-title {
     color: white;
     font-size: 5vw;
+  }
+
+  #empty-container {
+    height: 8vh;
   }
 
   main {
