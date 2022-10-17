@@ -17,7 +17,6 @@
   box-sizing: border-box;
   padding: 10px;
   box-shadow: 5px 5px 8px #888888;
-
 }
 
 .trybewarts-header-logo {
@@ -42,7 +41,7 @@
   width: 12vw;
 }
 #password {
-  width: 8vw;
+  width: 12vw;
 }
 
 #login {
@@ -216,7 +215,9 @@ h4 {
   font-size: 15px;
 }
 
-@media screen and (max-width: 1000px) {
+/* ------------------------------------ */
+
+@media screen and (max-width: 349px) {
   .trybewarts-header-logo {
     height: 6vh;
   }
@@ -225,22 +226,19 @@ h4 {
     color: white;
     font-size: 5vw;
   }
-  
-  .trybewarts-login {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  #email {
-    width: 15vw;
-  }
-  #password {
-    width: 13vw;
+
+  #email, #password, #login {
+    font-size: 8px;
   }
 
   main {
     height: max-content;
     padding-top: 20px;
+    font-size: 4vw;
+  }
+
+  #evaluation-form h2 {
+    font-size: 5vw;
   }
 
   #evaluation-form {
@@ -249,8 +247,18 @@ h4 {
   
   #container-user-data {
     width: 90%;
-    flex-direction: column;
-    align-items: center;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 4vw;
+  }
+  .input-user-data {
+    font-size: 4vw;
+  }
+  #container-house, #containe-house .input-user-data {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   #avaliation {
@@ -262,8 +270,96 @@ h4 {
   #label-family {
     align-self: center;
   }
-  #label-content {
+  #label-content, .label-content {
+    width: 100%;
     margin-top: 20px;
+    align-self: center;
+    text-align: center;
+  }
+  #subjects {
+    width: 90%;
+    font-size: 4vw;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+
+  #container-avaliation {
+    width: 80%;
+  }
+  #label-rate {
+    flex-wrap: wrap;
+  }
+
+  #trybewarts-forms-logo {
+    width: 80vw;
+  }
+
+  .footer h4{
+    font-size: 4vw;
+  }
+}
+
+/* ------------------------------------ */
+
+@media screen and (max-width: 1150px) {
+  .trybewarts-header-logo {
+    height: 6vh;
+  }
+  
+  #trybewarts-header-title {
+    color: white;
+    font-size: 5vw;
+  }
+
+  main {
+    height: max-content;
+    padding-top: 20px;
+  }
+
+  #evaluation-form {
+    width: 80vw;
+    max-width: 675px;
+  }
+  
+  #container-user-data {
+    width: 90%;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #container-house {
+    width: 250px;
+    margin: 5px;
+  }
+  #house.input-user-data {
+    width: 80%;
+    margin: 0;
+  }
+
+  #avaliation {
+    width: 90%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  #label-family {
+    align-self: center;
+  }
+  .label-family {
+    margin-bottom: 10px;
+  }
+  #label-content {
+    align-self: center;
+    text-align: center;
+  }
+  .label-content {
+    margin-bottom: 10px;
+  }
+  #subjects {
     align-self: center;
     text-align: center;
   }
@@ -273,6 +369,7 @@ h4 {
   }
   #label-rate {
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   #trybewarts-forms-logo {

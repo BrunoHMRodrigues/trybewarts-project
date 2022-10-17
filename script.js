@@ -16,7 +16,7 @@ const techList = document.getElementsByClassName('subject');
 const arrayRate = document.getElementsByName('rate');
 const music = document.getElementById('hp-theme-song');
 
-music.play();
+
 
 const login = () => {
   if (email.value === 'tryber@teste.com' && password.value === '123456') {
